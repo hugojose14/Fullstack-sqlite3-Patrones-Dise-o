@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='static/styles.css') }}">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1 class="text-center btn-primary ">Bienvenido al sistema de Usuarios</h1>
+        <br>
+        <br>
+        <div class="d-flex justify-content-center " >
+            <div class="abs-center" >
+                <div class="button" >
+                    <form action="/users/list" method="GET" >
+                        <input type="submit" class="btn btn-primary btn-l" value="Mostrar los usuarios en tabla" justify-content-center >
+                    </form>
+                    
+                    <br>
+                    <form action="/api/v1/users" method="GET" >
+                        <input type="submit" class="btn btn-primary btn-l" value="Mostrar los usuarios en formato Json">
+                    </form>
+                    <br>
+                    <form action="/" method="GET" >
+                        <input type="submit" class="btn btn-primary btn-l" value="Pagina de inicio">
+                    </form>
+                </div>
+            </div>
+        </div>
+      
+        
+    
+</body>
+</html>
